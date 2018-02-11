@@ -24,9 +24,7 @@ def solution(N, A):
         max_counter = counters[operation - 1]
     elif operation == N + 1:
       logger.info("The operation is identified to be total maximization")
-      for index, counter in enumerate(counters):
-        logger.info("Setting the counter %d to be %d", counter, max_counter)
-        counters[index] = max_counter
+      counters = [max_counter] * N
       logger.info("End result after main loop %s", counters)
 
   logger.info("Final end result %s", counters)
