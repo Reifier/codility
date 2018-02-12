@@ -10,6 +10,9 @@ class TestCountDiv(unittest.TestCase):
   def testWithNine(self):
     self.assertEqual(3, solution(1, 9, 3))
 
+  def testTinyRange(self):
+    self.assertEqual(0, solution(0, 1, 2))
+
 
 
 
