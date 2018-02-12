@@ -27,4 +27,8 @@ class TestCountDiv(unittest.TestCase):
   def test(self):
     self.assertEqual(3, solution(10, 14, 2))
 
+  def testTrivial(self):
+    self.assertEqual(2, solution(11, 14, 2))
+    self.assertEqual(1, solution(11, 13, 2))
+
 unittest.main()
